@@ -90,15 +90,15 @@
 		let myGreeting = '';
 		let myColor = '';
 
+		//TEST ONLY - REMOVE THIS
+		myHours = 8;
 
-		if(myHours > 12){
-		myGreeting = "Good Afternoon!";
-		myColor = "orange";
+		if(myHours >= 5 && myHours <12){
+			myGreeting = "Good Morning";
+			myColor = "yellow";
 		}else{
-		myGreeting = "Good Morning?";
-		myColor = "yellow";
+			alert('NOT morning');
 		}
-
 		document.getElementById('mydiv').innerHTML = myGreeting;
 		document.body.style.backgroundColor = myColor;
 	</script>
